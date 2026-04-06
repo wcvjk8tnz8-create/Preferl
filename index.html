@@ -1,1 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WhatCloud</title>
+</head>
 
+<body style="background:black;color:white;text-align:center;">
+
+<h1>✈️ WhatCloud 什么云</h1>
+
+<p>永久免費 · 無流量限制</p>
+
+<input value="https://whatcloud-cw9.pages.dev/sub?token=551fa86f2b51b82c203ee6433a716cbe&clash" style="width:80%;">
+
+<br><br>
+
+<button onclick="copy()">複製</button>
+<button onclick="go()">一鍵導入</button>
+
+<script>
+function copy(){
+navigator.clipboard.writeText(document.querySelector('input').value)
+alert("已複製")
+}
+
+function go(){
+window.location.href=document.querySelector('input').value
+}
+</script>
+
+</body>
+</html>
