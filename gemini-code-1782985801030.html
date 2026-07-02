@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Preferl</title>
+<!-- 引入更現代、圓潤的字體 Poppins -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* 全域字體和間距更新 */
+body { margin: 0; font-family: 'Poppins', 'Arial', sans-serif; background: #0b1020; color: #fff; padding: 0 10px; }
+a { color: #fff; text-decoration: none; }
+
+/* 圓潤的導覽列，增加填充和微妙陰影 */
+nav { display: flex; justify-content: space-between; padding: 20px 28px; background: #111827; position: sticky; top: 10px; border-radius: 20px; box-shadow: 0 6px 18px rgba(0,0,0,0.3); z-index: 1000; margin-top: 10px; }
+nav b { font-size: 22px; }
+nav div a { color: #fff; text-decoration: none; margin-left: 18px; padding: 12px 24px; border-radius: 50px; transition: background 0.3s; }
+nav div a:hover { background: rgba(255, 255, 255, 0.1); }
+nav div a:last-child { background: #3b82f6; }
+nav div a:last-child:hover { background: #2563eb; }
+
+/* 圓潤的 Hero 區域，增加填充、大圓角和微妙陰影 */
+.hero { padding: 110px 20px; text-align:center; background: linear-gradient(135deg,#6d28d9,#2563eb); border-radius: 32px; box-shadow: 0 10px 30px rgba(109, 40, 217, 0.3); margin: 30px 0; }
+.hero h1 { font-size: 56px; margin: 0; font-weight: 700; text-shadow: 0 4px 8px rgba(0,0,0,0.3); }
+.hero p { max-width: 700px; margin: 24px auto; font-size: 18px; opacity: 0.9; }
+
+/* 圓頭按鈕，增加填充、大圓角和柔和陰影 */
+.btn { display: inline-block; padding: 16px 32px; border-radius: 50px; background: #8b5cf6; margin: 10px; border: none; cursor: pointer; font-size: 18px; font-family: inherit; font-weight: 600; color: #fff; transition: background 0.3s, transform 0.2s, box-shadow 0.3s; text-decoration: none; box-shadow: 0 6px 18px rgba(139, 92, 246, 0.4); }
+.btn:hover { background: #7c3aed; transform: translateY(-3px); box-shadow: 0 8px 24px rgba(139, 92, 246, 0.5); }
+.btn:active { transform: translateY(0); box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4); }
+
+/* 圓潤的卡片區塊，增加填充、大圓角和柔和陰影 */
+.wrap { max-width: 1100px; margin: auto; padding: 60px 20px; }
+h2 { font-size: 36px; margin-bottom: 30px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(250px,1fr)); gap: 24px; }
+.card { background: #172033; padding: 30px; border-radius: 24px; box-shadow: 0 12px 28px rgba(0,0,0,0.25); transition: transform 0.3s, box-shadow 0.3s; }
+.card:hover { transform: translateY(-5px); box-shadow: 0 16px 36px rgba(0,0,0,0.3); }
+.card h3 { font-size: 24px; margin-top: 0; }
+.card p { opacity: 0.8; line-height: 1.6; }
+
+/* 圓潤的頁尾，增加填充和微妙陰影 */
+footer { text-align: center; padding: 40px; background: #111827; border-radius: 20px; box-shadow: 0 -6px 18px rgba(0,0,0,0.2); margin-top: 30px; opacity: 0.7; }
+
+/* 聯絡連結樣式保留，但增加大圓角 */
+.contact-link { color: #8b5cf6; text-decoration: underline; padding: 5px 10px; border-radius: 5px; transition: background 0.3s; }
+.contact-link:hover { color: #a78bfa; background: rgba(139, 92, 246, 0.1); }
+</style>
+</head>
+<body>
+<!-- 導覽列，聯絡按鈕直接指向 Telegram -->
+<nav>
+    <b>Preferl</b>
+    <div>
+        <a href="#f">特色</a>
+        <a href="https://t.me/preferl123edgetunnel" target="_blank">聯絡</a>
+    </div>
+</nav>
+
+<!-- Hero 區域，所有元素更圓潤 -->
+<section class="hero">
+    <h1>Preferl</h1>
+    <p>完全免費・高速・穩定</p>
+    <button class="btn" id="copyBtn">複製訂閱連結</button>
+    <a class="btn" href="https://t.me/preferl123edgetunnel" target="_blank">Telegram 頻道</a>
+</section>
+
+<!-- 特色區塊，卡片更圓潤 -->
+<div class="wrap">
+    <h2 id="f">特色</h2>
+    <div class="grid">
+        <div class="card">
+            <h3>⚡ 高速</h3>
+            <p>低延遲體驗。</p>
+        </div>
+        <div class="card">
+            <h3>🔒 安全</h3>
+            <p>保護連線。</p>
+        </div>
+        <div class="card">
+            <h3>📱 多平台</h3>
+            <p>支援主流裝置。</p>
+        </div>
+        <div class="card">
+            <h3>🆓 免費</h3>
+            <p>免費提供。</p>
+        </div>
+    </div>
+
+    <!-- 聯絡連結樣式保留，聯絡導覽按鈕已直接指向 Telegram -->
+    <h2>聯絡</h2>
+    <p>服務異常請前往 <a class="contact-link" href="https://t.me/preferl123edgetunnel" target="_blank">Telegram 頻道</a>。</p>
+</div>
+
+<!-- 頁尾，大圓角 -->
+<footer>© 2026 Preferl</footer>
+
+<!-- JavaScript 保留 -->
+<script>
+document.getElementById('copyBtn').addEventListener('click', function() {
+    const subLink = 'https://whatcloud-cw9.pages.dev/sub?token=551fa86f2b51b82c203ee6433a716cbe&clash';
+    
+    navigator.clipboard.writeText(subLink).then(function() {
+        const btn = document.getElementById('copyBtn');
+        const originalText = btn.innerText;
+        btn.innerText = '已複製！';
+        
+        setTimeout(function() {
+            btn.innerText = originalText;
+        }, 2000);
+    }).catch(function(err) {
+        alert('複製失敗，請檢查瀏覽器權限設定。');
+        console.error('複製失敗:', err);
+    });
+});
+</script>
+</body>
+</html>
