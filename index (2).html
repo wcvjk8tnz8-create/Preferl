@@ -1,0 +1,34 @@
+<!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Preferl</title><style>
+body{margin:0;font-family:Arial;background:#0b1020;color:#fff}nav{display:flex;justify-content:space-between;padding:16px 24px;background:#111827;position:sticky;top:0}a{color:#fff;text-decoration:none}.hero{padding:80px 20px;text-align:center;background:linear-gradient(135deg,#6d28d9,#2563eb)}.btn{display:inline-block;padding:14px 26px;border-radius:999px;background:#8b5cf6;margin:8px;border:none;cursor:pointer;font-size:16px;font-family:inherit;color:#fff;transition:background 0.3s;text-decoration:none;}.btn:hover{background:#7c3aed;}.wrap{max-width:1100px;margin:auto;padding:40px 20px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}.card{background:#172033;padding:20px;border-radius:14px}footer{text-align:center;padding:30px;background:#111827}
+</style></head><body>
+<nav><b>Preferl</b><div><a href="#f">特色</a> <a href="#c">聯絡</a></div></nav>
+<section class="hero"><h1>Preferl</h1><p>完全免費・高速・穩定</p>
+<button class="btn" id="copyBtn">複製訂閱連結</button>
+<a class="btn" href="https://t.me/preferl123edgetunnel" target="_blank">Telegram 頻道</a></section>
+<div class="wrap"><h2 id="f">特色</h2><div class="grid">
+<div class="card"><h3>⚡ 高速</h3><p>低延遲體驗。</p></div>
+<div class="card"><h3>🔒 安全</h3><p>保護連線。</p></div>
+<div class="card"><h3>📱 多平台</h3><p>支援主流裝置。</p></div>
+<div class="card"><h3>🆓 免費</h3><p>免費提供。</p></div>
+</div>
+<h2 id="c">聯絡</h2><p>服務異常請前往 Telegram 頻道。</p></div>
+<footer>© 2026 Preferl</footer>
+<script>
+document.getElementById('copyBtn').addEventListener('click', function() {
+    const subLink = 'https://whatcloud-cw9.pages.dev/sub?token=551fa86f2b51b82c203ee6433a716cbe&clash';
+    
+    navigator.clipboard.writeText(subLink).then(function() {
+        const btn = document.getElementById('copyBtn');
+        const originalText = btn.innerText;
+        btn.innerText = '已複製！';
+        
+        setTimeout(function() {
+            btn.innerText = originalText;
+        }, 2000);
+    }).catch(function(err) {
+        alert('複製失敗，請檢查瀏覽器權限設定。');
+        console.error('複製失敗:', err);
+    });
+});
+</script>
+</body></html>
